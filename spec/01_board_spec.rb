@@ -39,7 +39,7 @@ describe "Board" do
       board.cells = ["X", "X", "X", "X", "O", "O", "X", "O", "O"]
 
       output = capture_puts{ board.display }
-
+ 
       expect(output).to include(" X | X | X ")
       expect(output).to include("-----------")
       expect(output).to include(" X | O | O ")
